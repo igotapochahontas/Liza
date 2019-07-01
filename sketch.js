@@ -31,12 +31,15 @@ function setup() {
         console.log(word, score);
         totalScore += Number(score);
         scoredwords.push(word + ': ' + score + ' ');
+if (totalScore >0){
+emote = "😁";}
       }
     }
     var scorePar = select('#scoreP');
     scorePar.html('score: ' + totalScore);
     var comp = select('#comparativeP');
-    comp.html('comparative: ' + totalScore / words.length);
+   comp.html('I feel ' + emote);
+ //comp.html('comparative: ' + totalScore / words.length);
     var wordlist = select('#wordlistP');
     wordlist.html(scoredwords);
 
