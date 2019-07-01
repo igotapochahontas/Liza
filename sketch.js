@@ -32,11 +32,15 @@ function setup() {
         console.log(word, score);
         totalScore += Number(score);
         scoredwords.push(word + ': ' + score + ' ');
-if (totalScore >0){
-emote = "😁";}
-emote ="🤔";
+
       }
     }
+  if (totalScore > 0){
+emote = "😊";}
+if (totalScore < 0){
+emote = "😒";}
+if (totalScore = 0){
+emote = "🤔";}
     var scorePar = select('#scoreP');
     scorePar.html('score: ' + totalScore);
     var comp = select('#comparativeP');
