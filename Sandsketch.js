@@ -31,7 +31,7 @@ function setup() {
         var score = afinn[word];
         console.log(word, score);
         totalScore += Number(score);
-        scoredwords.push(word + ': ' + score + ' ');
+        scoredwordspush(word + ': ' + score + ' ');
 
       }
     }
