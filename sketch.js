@@ -39,7 +39,7 @@ function setup() {
 emote = "😊";}
 if (totalScore < 0){
 emote = "😒";}
-if (totalScore == 0){
+if (totalScore == 0||null){
 emote = "🤔";}
     var scorePar = select('#scoreP');
     scorePar.html('score: ' + totalScore);
