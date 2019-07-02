@@ -40,7 +40,7 @@ emote = "🤔";
 //emote = "😊";}
 //if (totalScore < 0){
 //emote = "😒";}
-switch (totalScore) {
+switch (score) {
   case 0:
     emote = "🤔";
     break;
