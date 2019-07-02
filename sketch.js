@@ -22,7 +22,7 @@ function setup() {
     var textinput = txt.value();
     var words = textinput.split(/\W/);
     console.log(words);
-    var emote = "0"; 
+    var emote = "🤐"; 
     var scoredwords = [];
     var totalScore = 0;
     for (var i = 0; i < words.length; i++) {
