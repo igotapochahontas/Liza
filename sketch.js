@@ -22,7 +22,7 @@ function setup() {
     var textinput = txt.value();
     var words = textinput.split(/\W/);
     console.log(words);
-    var emote = "🤐"; 
+    var emote = "🤔"; 
     var scoredwords = [];
     var totalScore = 0;
     for (var i = 0; i < words.length; i++) {
@@ -35,18 +35,6 @@ function setup() {
 
       }
     }
-//emote = "🤔";
- // if (totalScore > 0){
-//emote = "😊";}
-//if (totalScore < 0){
-//emote = "😒";}
-
-
-
-
-
-
-
 switch (totalScore) {
   case 0:
     emote = "🤔";
@@ -85,7 +73,6 @@ switch (totalScore) {
 default:
     emote = "🤔";
 }
-
     var scorePar = select('#scoreP');
     scorePar.html('score: ' + totalScore);
     var comp = select('#comparativeP');
