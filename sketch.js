@@ -36,10 +36,48 @@ function setup() {
       }
     }
 emote = "🤔";
-  if (totalScore > 0){
-emote = "😊";}
-if (totalScore < 0){
-emote = "😒";}
+  //if (totalScore > 0){
+//emote = "😊";}
+//if (totalScore < 0){
+//emote = "😒";}
+switch (totalScore) {
+  case 0:
+    emote = "🤔";
+    break;
+  case 1:
+    emote = "😐";
+    break;
+  case 2:
+     emote = "☺";
+    break;
+  case 3:
+    emote = "😀";
+    break;
+  case 4:
+    emote = "😁";
+    break;
+  case 5:
+    emote = "😍";
+    break;
+ 
+  case -1:
+    emote = "😑";
+    break;
+  case -2:
+     emote = "😒";
+    break;
+  case -3:
+    emote = "😩";
+    break;
+  case -4:
+    emote = "😡";
+    break;
+  case -5:
+    emote = "😤";
+    break;
+default:
+emote = "🤔"
+}
 
     var scorePar = select('#scoreP');
     scorePar.html('score: ' + totalScore);
