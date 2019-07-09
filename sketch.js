@@ -79,7 +79,7 @@ var day;
    var tday= totalScore / words.length;
 if (tday > 1){
 day  = "great";}
-elseif (tday < 0){
+else if (tday < 0){
 day = "crappy";}
 else {day = "ok";}
     var scorePar = select('#scoreP');
