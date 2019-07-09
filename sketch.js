@@ -36,10 +36,7 @@ function setup() {
       }
     }
 emote = "🤔";
-  //if (totalScore > 0){
-//emote = "😊";}
-//if (totalScore < 0){
-//emote = "😒";}
+  
 switch (score) {
   case 0:
     emote = "🤔";
@@ -78,12 +75,19 @@ switch (score) {
 default:
 emote = "🤔"
 }
-
+var day;
+   var tday= totalScore / words.length;
+if (tday > 1){
+day  = "great";}
+elseif (tday < 0){
+day = "crappy";}
+else {day = "ok";}
     var scorePar = select('#scoreP');
-    scorePar.html('score: ' + totalScore);
+    scotrPar.html('My day is: ' + day + ' so far');
+   // scorePar.html('score: ' + totalScore);
     var comp = select('#comparativeP');
    comp.html('I feel ' + emote);
- //comp.html('comparative: ' + totalScore / words.length);
+ //
     var wordlist = select('#wordlistP');
     wordlist.html(scoredwords);
 
