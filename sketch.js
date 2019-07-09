@@ -76,14 +76,14 @@ default:
 emote = "🤔"
 }
 var day;
-   var tday= totalScore / words.length;
+   var tday= (totalScore / words.length);
 if (tday > 1){
 day  = "great";}
 else if (tday < 0){
 day = "crappy";}
 else {day = "ok";}
     var scorePar = select('#scoreP');
-    scotrPar.html('My day is: ' + day + ' so far');
+    scorePar.html('My day is: ' + day + ' so far');
    // scorePar.html('score: ' + totalScore);
     var comp = select('#comparativeP');
    comp.html('I feel ' + emote);
